@@ -1,0 +1,4 @@
+$color: red;
+.foo{
+    color: darken($color, 10);
+}

@@ -26,6 +26,10 @@ module.exports = (env, argv) => {
                     use: [MiniCssExtractPlugin.loader, "css-loader"],
                 },
                 {
+                    test: /\.scss$/i,
+                    use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+                },
+                {
                     test: /\.tsx?$/,
                     use: {
                         loader: "ts-loader",
